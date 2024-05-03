@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import { Corel, Header, Items, Main, Skech } from "./pages"
+import { Corel, Items, Main, Skech } from "./pages"
+import { Posts, PostsDetails } from "./componens"
 
 
 
@@ -13,6 +14,8 @@ const App = () => {
           <Route path="/items" element={<Items/>}/>
           <Route path="/corel" element={<Corel/>}/>
           <Route path="/skech" element={<Skech/>}/>
+          <Route path="/posts" element={<Posts/>}/>
+          <Route path="/posts/:id" element={<PostsDetails/>}/>
         </Route>
       </Routes>
     </Router>
